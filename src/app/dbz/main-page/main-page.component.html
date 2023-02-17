@@ -1,0 +1,14 @@
+<p>Dragon Ball Z</p>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes></app-personajes>
+    </div>
+    <div class="col">
+        <!-- Lo que se envia desde el hijo es un evento, por lo cual, toda la info que emite ese evento se recibe en el $event, se
+      crea una funcion en el padre que reciba el evento y lo procese (3)
+        <app-agregar [nuevoPersonaje]="personaje" (onNewCharacter)="addNewCharacterToList($event)"></app-agregar>-->
+        <app-agregar [nuevoPersonaje]="personaje"></app-agregar>
+    </div>
+</div>
